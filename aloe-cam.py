@@ -7,6 +7,4 @@ while True:
     if photo.take_photo():
         tweet.tweet_image('photo.jpg')
 
-    time.sleep(config.SLEEP_TIME)
-
-
+    time.sleep(float(config.SLEEP_TIME))

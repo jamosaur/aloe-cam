@@ -13,5 +13,6 @@ def get_latest_file_number():
 
 
 def copy_photo_to_local_storage():
-    file_name = "%10d" % get_latest_file_number()
-    os.system("cp -f photo.jpg " + config.LOCAL_STORAGE_LOCATION + file_name + ".jpg")
+    file_name = "%010d" % get_latest_file_number() + ".jpg"
+    os.system("cp -f photo.jpg " + config.LOCAL_STORAGE_LOCATION)
+    os.system("mv " + config.LOCAL_STORAGE_LOCATION + "photo.jpg " + config.LOCAL_STORAGE_LOCATION + file_name)
