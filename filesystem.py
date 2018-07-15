@@ -9,6 +9,7 @@ def get_latest_file_number():
         return 1
     latest_file = max(list_of_files, key=os.path.getctime)
     _, filename = os.path.split(latest_file)
+    print("Latest Filename " + filename)
     return int(filename.split(".")[0])
 
 
