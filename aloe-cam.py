@@ -2,11 +2,14 @@ import config
 import time
 import tweet
 import photo
+import filesystem
 
 while True:
     start = int(time.time())
-    if photo.take_photo():
-        tweet.tweet_image("photo.jpg")
+    photo.take_photo()
+    if filesystem.get_latest_file_number() % 36:
+        photo.create_gif(filesystem.get_latest_file_number())
+        tweet.tweet_image("timelapse.gif")
 
     end = int(time.time())
 
