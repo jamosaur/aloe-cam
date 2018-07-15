@@ -3,8 +3,10 @@ import time
 import tweet
 import photo
 import filesystem
+import suncheck
 
 while True:
+    suncheck.check_sun()
     start = int(time.time())
     photo.take_photo()
     if filesystem.get_latest_file_number() % 36:
