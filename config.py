@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-load_dotenv(verbose=True)
+load_dotenv(verbose=True,dotenv_path=".env")
 
 TWITTER_ENABLED = os.getenv('TWITTER_ENABLED')
 S3_ENABLED = os.getenv('S3_UPLOAD_ENABLED')
