@@ -7,6 +7,9 @@ TWITTER_ENABLED = os.getenv('TWITTER_ENABLED')
 S3_ENABLED = os.getenv('S3_UPLOAD_ENABLED')
 LOCAL_STORE_ENABLED = os.getenv('LOCAL_STORE_ENABLED')
 
+LAT = os.getenv('LAT')
+LNG = os.getenv('LNG')
+
 WIDTH = os.getenv('PHOTO_WIDTH')
 HEIGHT = os.getenv('PHOTO_HEIGHT')
 SLEEP_TIME = os.getenv('TIME_BETWEEN_PHOTOS')
