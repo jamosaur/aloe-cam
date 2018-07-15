@@ -3,7 +3,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+TWITTER_ENABLED = os.getenv('TWITTER_ENABLED')
 CONSUMER_TOKEN = os.getenv('TWITTER_CONSUMER_TOKEN')
 CONSUMER_SECRET = os.getenv('TWITTER_CONSUMER_SECRET')
 ACCESS_TOKEN = os.getenv('TWITTER_ACCESS_TOKEN')
 ACCESS_SECRET = os.getenv('TWITTER_ACCESS_SECRET')
+
+S3_ENABLED = os.getenv('S3_UPLOAD_ENABLED')
