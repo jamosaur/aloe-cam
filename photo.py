@@ -10,3 +10,4 @@ def take_photo():
 
     if config.LOCAL_STORE_ENABLED:
         filesystem.copy_photo_to_local_storage()
+    return True
