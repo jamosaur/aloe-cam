@@ -9,7 +9,7 @@ while True:
     suncheck.check_sun()
     start = int(time.time())
     photo.take_photo()
-    if filesystem.get_latest_file_number() % 36:
+    if filesystem.get_latest_file_number() % 36 == 0:
         photo.create_gif(filesystem.get_latest_file_number())
         tweet.tweet_image("timelapse.gif")
 
