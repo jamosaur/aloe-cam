@@ -2,7 +2,7 @@ certifi==2018.4.16
 chardet==3.0.4
 idna==2.7
 imageio==2.3.0
-numpy==1.14.5
+numpy==1.22.0
 oauthlib==2.1.0
 Pillow==5.2.0
 PySocks==1.6.8
